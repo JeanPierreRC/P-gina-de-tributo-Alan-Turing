@@ -1,0 +1,574 @@
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: darkgray url("img/fondo.jpg") no-repeat fixed;
+    background-size: cover;
+  }
+  
+/* Estilos para el encabezado */
+header {
+    margin-top: 50px;
+    display: flex;
+    background-color: black;
+    color:white;
+    padding: 20px;
+    flex-direction: row;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  nav ul {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Estilos para el contenido principal */
+  main {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Estilos para la sección "Historia de Alan Turing" */
+  #historia-de-Alan-turing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  #historia-de-Alan-turing h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  #historia-de-Alan-turing div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #historia-de-Alan-turing p {
+    font-size: 110%;
+    margin-right: 20px;
+  }
+  
+  #historia-de-Alan-turing img {
+    width: 50%;
+    max-width: 100%;
+  }
+  
+  /* Estilos para la sección "biografia" */
+
+  #biografia {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  #biografia h2 {
+    margin-top: 0;
+    text-align: justify;
+  }
+  
+  #biografia div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  #biografia p {
+    font-size: 110%;
+    margin-right: 20px;
+    width: 70%;
+  }
+
+  #biografia img{
+    width: 50%;
+    max-width: 100%;
+    margin-left: 20px;
+  }
+  
+ /* Estilos para la seccion que hizo */
+  
+  #que-hizo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  #que-hizo img {
+    width: 50%;
+    margin-right: 20px;
+  }
+  
+  #que-hizo div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #que-hizo div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  #que-hizo div > div h2 {
+    text-align: center;
+  }
+  
+  #que-hizo div > div p {
+    text-align: justify;
+  }
+  
+  #que-hizo h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  #que-hizo p {
+    text-align: justify;
+    font-size: 110%;
+  }
+  
+
+   /* Estilos para la seccion que No todo tiene solucion*/
+  
+   #no-todo-solucion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  #no-todo-solucion img {
+    width: 50%;
+    margin-right: 20px;
+  }
+  
+  #no-todo-solucion div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #no-todo-solucion div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  #no-todo-solucion div > div h2 {
+    text-align: center;
+  }
+  
+  #no-todo-solucion div > div p {
+    text-align: justify;
+  }
+  
+  #no-todo-solucion h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  #no-todo-solucion p {
+    text-align: justify;
+    font-size: 110%;
+  }
+
+/* Estilo para la seccion Maquina de Turing */
+
+#maquina-turing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#maquina-turing img {
+  width: 60%;
+  margin-bottom: 5px;
+}
+
+#maquina-turing div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#maquina-turing div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#maquina-turing div > div p {
+  text-align: justify;
+}
+
+#maquina-turing > div > div:nth-child(2) {
+  flex-basis: 60%;
+}
+
+#maquina-turing > div > div:nth-child(1) {
+  flex-basis: 40%;
+}
+
+
+#maquina-turing h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#maquina-turing iframe {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estilos para la Seccion Tesis Church-Turing */
+
+#tesis-church-turing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#tesis-church-turing img {
+  width: 50%;
+  margin-left: 10px;
+}
+
+#tesis-church-turing div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#tesis-church-turing div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+#tesis-church-turing h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#tesis-church-turing p {
+  text-align: justify;
+}
+
+
+
+/* Estilos para la sección Sus aporte a la humanidad*/
+
+#aportaciones {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#aportaciones h2 {
+  margin-bottom: 20px;
+}
+
+#aportaciones > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.aportacion {
+  width: calc(33.33% - 20px);
+  margin-bottom: 40px;
+}
+
+.aportacion img {
+  max-width: 100%;
+  height: auto;
+}
+
+.aportacion h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.aportacion p {
+  font-size: 16px;
+}
+
+.aportacion > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.aportacion iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para el formulario de contacto */
+
+#contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #contacto h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #contacto div {
+    margin-bottom: 10px;
+  }
+  
+  #contacto label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #contacto input[type="text"],
+  #contacto input[type="email"],
+  #contacto textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #contacto textarea {
+    height: 150px;
+  }
+  
+  #contacto button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #contacto button[type="submit"]:hover {
+    background-color: blue;
+  }
+  
+
+  /* Estilos para el pie de página */
+  footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+/* Estilos para pantallas pequeñas (480px o menos) */
+
+@media only screen and (max-width: 480px) {
+
+  header {
+    font-size: 20px;
+  }
+
+  nav ul {
+    font-size: 14px;
+    flex-direction: column;
+  }
+
+  #historia-de-Alan-turing div {
+    flex-direction: column;
+  }
+  
+  #historia-de-Alan-turing p {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  #historia-de-Alan-turing img {
+    width: 100%;
+  }
+
+  #biografia div {
+    flex-direction: column;
+  }
+  
+  #biografia img {
+    width: 60%;
+    margin-top: 20px;
+  }
+
+
+  #que-hizo div {
+      flex-direction: column;
+    }
+  
+  #que-hizo img {
+      width: 80%;
+      margin-right: 0;
+      margin-bottom: 20px;
+      order: 1; /* Coloca la imagen después del texto */
+    }
+    
+  #no-todo-solucion div {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    
+  #no-todo-solucion img {
+      width: 80%;
+      margin-right: 0;
+      margin-bottom: 20px;
+      order: 1; /* Coloca la imagen después del texto */
+    }
+  #maquina-turing div {
+      flex-direction: column;
+    }
+  
+  #maquina-turing img {
+      width: 80%;
+      margin: 20px auto;
+    }
+  
+  #maquina-turing h2 {
+      width: auto;
+      text-align: center;
+    }
+  #tesis-church-turing div {
+      flex-direction: column;
+    }
+    
+  #tesis-church-turing img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+  #tesis-church-turing h2 {
+      width: 100%;
+    }
+  
+  #maquina-turing div {
+      flex-direction: column;
+    }
+  
+  #maquina-turing img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+  #tesis-church-turing div {
+      flex-direction: column;
+    }
+  
+  #tesis-church-turing img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  .aportacion {
+      width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+  #biografia {
+    flex-direction: row;
+  }
+  #biografia h2 {
+    margin-right: 20px;
+  }
+  #biografia div {
+    flex-direction: row;
+  }
+  #biografia p {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  #biografia img {
+    width: 40%;
+    margin-top: 0;
+  }
+  #que-hizo img{
+    width: 40%;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  #biografia h2 {
+    margin-right: 50px;
+  }
+  #biografia p {
+    margin-right: 50px;
+  }
+
+}
+@media (min-width: 1025px) {
+  #historia-de-Alan-turing img {
+    width: 40%;
+  }
+}
+
+  
